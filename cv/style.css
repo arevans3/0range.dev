@@ -1,0 +1,80 @@
+body {
+    margin-top: 45px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5px;
+    width: 750px;
+    margin: auto;
+    font-family: 'Courier New';
+}
+* { box-sizing: border-box; margin: 0; }
+
+.name {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.title {
+    color: orangered;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.heading {
+    color: orangered;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.bar {
+    border-top: 2px solid black;
+    margin-bottom: 5px;
+    width: 90%
+}
+
+.subheading {
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.left-section {
+    padding: 10px;
+}
+
+.right-section {
+    padding: 5px;
+}
+
+.skills-list {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+.position {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.position-duration {
+    color: grey;
+    font-size: 12px;
+}
+
+.position-description-list {
+    margin-top: 5px;
+    list-style-type: "-  ";
+    font-size: 13px;
+}
