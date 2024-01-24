@@ -8,9 +8,7 @@
     <div class="grid-container">
         <div>
             <div class="left-section">
-                <p class="name">Danie
-                    <br>
-                    Evans</p>
+                <p class="name">Danie<br>Evans</p>
                 <p class="title">Software Developer</p>
             </div>
             <div class="left-section">
@@ -29,13 +27,13 @@
             <div class="left-section">
                 <p class="subheading">Frameworks/Tools</p>
                 <ul class="skills-list">
-                    <li>Dropwizard</li>
                     <li>Spring</li>
+                    <li>Dropwizard</li>
                     <li>Postgresql</li>
                     <li>Opensearch</li>
                     <!-- <li>AWS Python SDK</li> -->
                     <li>Docker</li>
-                    <li>AWS ECS</li>
+                    <li>AWS ECS, SQS</li>
                     <li>Terraform</li>
                     <li>Jenkins</li>
                     <li>Splunk</li>
@@ -57,33 +55,34 @@
         </div>
         <div>
             <p class="heading">Experience</p>
-            <div class="bar" />
+            <div class="bar"/>
             <div class="right-section">
                 <p class="position"><b>Zola</b> / Senior Software Developer</p>
                 <p class="position-duration">APRIL 2022 - OCTOBER 2023, REMOTE</p>
                 <ul class="position-description-list">
-                    <li>worked on transactional and marketing emails using mandrill, hubspot, sailthru</li>
-                    <li>integrated with Hive for automated message moderation</li>
-                    <li>worked on the order system for featured placements</li>
-                    <li>migrated marketing data syncing from java to hightouch - mostly involved writing a bunch of massive queries and reformatting hubspot objects</li>
-                    <li>did a lot of ad-hoc query writing for marketing? is that a job?</li>
-                    <li>also synced data to salesforce using hightouch</li>
-                    <li>added more objects relations to hightouch (parent/child companies, company users, inquiry storefronts, etc)</li>
-                    <li>did a bit of work in the admin ux but maybe I don't want to advertise that I've done Groovy</li>
-                    <li>allowed vendors to report couples as spam - was linked with zendesk</li>
-                    <li>created a system to allow unmanaged pages (unclaimed storefronts) to exist on our platform</li>
-                    <li>also used looker for some of the syncs</li>
-                    <li>added yelp reviews and ratings to LDPs</li>
-                    <li>adding some reporting on listing changes to detect fraud</li>
+                    <li>Developed marketplace backend services using Dropwizard (Java), Postgresql</li>
+                    <ul>
+                        <li>TODO: specific big projects: ads on the SRP, vendor -> couple contact (had to set up an elasticsearch index for this), spam reporting, unmanaged listings</li>
+                    </ul>
+                    <!-- was the 3rd-party integration guy... -->
+                    <li>Worked on transactional and marketing emails using Mandrill, Hubspot</li>
+                    <li>Integrated with Hive for automated message moderation</li>
+                    <li>Integrated with Yelp to add reviews to the marketplace listing pages</li>
+                    <li>Synced marketing data across multiple platforms using Hightouch, Looker</li>
+                    <ul>
+                        <li>TODO: migrated marketing data syncing from java to hightouch - mostly involved writing a bunch of massive queries and cutover prepping</li>
+                    </ul>
+                    <li>TODO: did a lot of ad-hoc query writing for marketing? is that a job?</li>
+                    <li>TODO: did a bit of work in the admin ux but maybe I don't want to advertise that I've done Groovy</li>
                 </ul>
             </div>
             <div class="right-section">
                 <p class="position"><b>Trend Micro</b> / Software Developer</p>
                 <p class="position-duration">NOVEMBER 2020 - MARCH 2022, REMOTE</p>
                 <ul class="position-description-list">
-                    <li>Developed RASP security agents for web applications</li>
+                    <li>Developed a runtime security agent for web applications</li>
+                    <li>Set up automated packaging/deployment for the AWS Lambda Container version of the agent</li>
                     <li>Built a system to run load tests with Locust in AWS Fargate</li>
-                    <li>TODO - did the lambda container packaging and tests for the python agent</li>
                 </ul>
             </div>
             <div class="right-section">
@@ -103,11 +102,11 @@
                     <li>Designed/maintained AWS infrastructure using Terraform, Saltstack, and Chef</li>
                     <li>Developed deployment and automation tooling using Python, Bash</li>
                     <li>Led a cost-saving and reliability focused load balancer migration - reduced related costs by 80%</li>
-                    <li>Was part of an on call rotation covering all services in the AppHelp business unit</li>
+                    <li>Participated in an on call rotation covering all services in the AppHelp business unit</li>
                 </ul>
             </div>
             <div class="right-section">
-                <p class="position"><b>AppHelp by AppDirect</b> / Build Automation Intern</p>
+                <p class="position"><b>AppDirect</b> / Build Automation Intern</p>
                 <p class="position-duration">MAY 2017 - DECEMBER 2017, MONTREAL QC</p>
                 <ul class="position-description-list">
                     <li>Automated machine image creation using Packer and Ansible</li>
