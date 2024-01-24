@@ -1,1 +1,1 @@
-Check out [my rad website](https://arielle.dev)
+Check out [my rad website](https://0range.dev)
