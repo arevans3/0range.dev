@@ -1,8 +1,79 @@
 body {
-  background-color: rgb(44, 42, 42);
-  text-align: center;
+  background-color: rgb(42, 42, 42);
 }
-#hexagon {
-  color: rgb(117, 122, 117);
-  font-size: 800px;
+
+ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -300px;
+  padding: 0;
+  width: 600px;
+  height: 600px;
+}
+
+ul li {
+  list-style: none;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin: -100px;
+  /* equilateral triangle */
+  clip-path: polygon(86% 100%, 86% 0%, 0% 50%);
+
+  transition: 0.75s;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+ul li:hover {
+  opacity: 1;
+}
+
+/* ordered clockwise, starting at the top left */
+#segment1 {
+  top: 32%;
+  left: 41%;
+  background: rgb(120, 20, 220);
+}
+
+#segment2 {
+  top: 32%;
+  left: 59%;
+  background: rgb(220, 50, 150);
+}
+
+#segment3 {
+  top: 50%;
+  left: 71.6%;
+  background: rgb(200, 100, 50);
+}
+
+#segment4 {
+  top: 68%;
+  left: 59%;
+  background: rgb(220, 200, 50);
+}
+
+#segment5 {
+  top: 68%;
+  left: 41%;
+  background: rgb(50, 200, 220);
+}
+
+#segment6 {
+  top: 50%;
+  left: 28.4%;
+  background: rgb(20, 50, 200);
+}
+
+/* <| */
+.triangle-left {
+  transform: rotate(120deg);
+}
+
+/* |> */
+.triangle-right {
+  transform: rotate(60deg);
 }
