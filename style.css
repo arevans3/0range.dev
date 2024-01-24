@@ -33,31 +33,31 @@ ul li:hover {
 
 /* ordered clockwise, starting at the top left */
 #segment1 {
-  top: 32%;
+  top: 32.4%;
   left: 41%;
   background: rgb(120, 20, 220);
 }
 
 #segment2 {
-  top: 32%;
+  top: 32.4%;
   left: 59%;
   background: rgb(220, 50, 150);
 }
 
 #segment3 {
   top: 50%;
-  left: 71.6%;
+  left: 71.8%;
   background: rgb(200, 100, 50);
 }
 
 #segment4 {
-  top: 68%;
+  top: 67.6%;
   left: 59%;
   background: rgb(220, 200, 50);
 }
 
 #segment5 {
-  top: 68%;
+  top: 67.6%;
   left: 41%;
   background: rgb(50, 200, 220);
 }
