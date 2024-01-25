@@ -31,10 +31,6 @@ ul li {
   opacity: 0.5;
 }
 
-ul li:hover {
-  opacity: 1;
-}
-
 /* ordered clockwise, starting at the top left */
 #segment1 {
   top: 32.4%;
@@ -80,4 +76,64 @@ ul li:hover {
 /* |> */
 .triangle-right {
   transform: rotate(60deg);
+}
+
+
+.blink {
+  animation-duration: 600ms;
+  animation-name: blink;
+  -webkit-animation-duration: 600ms;
+  -webkit-animation-name: blink;
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0.75;
+  }
+  33% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0.5;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0.75;
+  }
+  33% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0.5;
+  }
+}
+
+
+.blink-mistake {
+  animation-duration: 600ms;
+  animation-name: blink-mistake;
+  -webkit-animation-duration: 600ms;
+  -webkit-animation-name: blink-mistake;
+}
+@-webkit-keyframes blink-mistake {
+  0% {
+    opacity: 0.5;
+  }
+  33% {
+      opacity: 0.05;
+  }
+  100% {
+      opacity: 0.5;
+  }
+}
+@keyframes blink-mistake {
+  0% {
+    opacity: 0.5;
+  }
+  33% {
+      opacity: 0.05;
+  }
+  100% {
+      opacity: 0.5;
+  }
 }

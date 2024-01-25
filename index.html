@@ -1,14 +1,18 @@
-<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="simon.js"></script>
+</head>
 
 <body>
     <ul>
-        <li id="segment1" class="triangle-left"></li>
-        <li id="segment2" class="triangle-right"></li>
-        <li id="segment3" class="triangle-left"></li>
-        <li id="segment4" class="triangle-right"></li>
-        <li id="segment5" class="triangle-left"></li>
-        <li id="segment6" class="triangle-right"></li>
+        <li id="segment1" class="triangle-left" onclick="simon_says(this)"></li>
+        <li id="segment2" class="triangle-right" onclick="simon_says(this)"></li>
+        <li id="segment3" class="triangle-left" onclick="simon_says(this)"></li>
+        <li id="segment4" class="triangle-right" onclick="simon_says(this)"></li>
+        <li id="segment5" class="triangle-left" onclick="simon_says(this)"></li>
+        <li id="segment6" class="triangle-right" onclick="simon_says(this)"></li>
     </ul>
 </body>
 
