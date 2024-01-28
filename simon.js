@@ -3,18 +3,21 @@ const elements = ["segment1", "segment2", "segment3", "segment4", "segment5", "s
 var sequence = [];
 var sequence_index = 0;
 
-function blink(element){
-    console.log("blink" + element);
-    doAnimation(element, "blink");
+function click_blink(element){
+    doAnimation(element, "click-blink", 400);
 }
 
-function show_mistake(element) {
-    doAnimation(element, "blink-mistake");
+function mistake_blink(element){
+    doAnimation(element, "mistake-blink", 700);
 }
 
-function doAnimation(element, className) {
+function sequence_blink(element) {
+    doAnimation(element, "sequence-blink", 700);
+}
+
+function doAnimation(element, className, timeout) {
     element.classList.add(className);
-    setTimeout(endAnimation, timeout=750, element, className);
+    setTimeout(endAnimation, timeout=timeout, element, className);
 }
 
 function endAnimation(element, className) {
@@ -23,7 +26,7 @@ function endAnimation(element, className) {
 
 function show_sequence() {
     for (i in sequence) {
-        setTimeout(blink, 800 * (i), sequence[i]);
+        setTimeout(sequence_blink, 800 * (i), sequence[i]);
     }
 }
 
@@ -54,16 +57,15 @@ function check_sequence(elem) {
 }
 
 function simon_says(elem) {
-    console.log(sequence, sequence_index);
     if (!check_sequence(elem)) {
-        show_mistake(elem);
+        mistake_blink(elem);
         reset_sequence();
     } else if (sequence_index == sequence.length - 1) {
-        blink(elem);
+        click_blink(elem);
         extend_sequence();
         setTimeout(show_sequence, 1200);
     } else {
-        blink(elem);
+        click_blink(elem);
         sequence_index++;
     }
 }

@@ -79,13 +79,13 @@ ul li {
 }
 
 
-.blink {
+.sequence-blink {
   animation-duration: 600ms;
-  animation-name: blink;
+  animation-name: sequence-blink;
   -webkit-animation-duration: 600ms;
-  -webkit-animation-name: blink;
+  -webkit-animation-name: sequence-blink;
 }
-@-webkit-keyframes blink {
+@-webkit-keyframes sequence-blink {
   0% {
     opacity: 0.75;
   }
@@ -96,7 +96,7 @@ ul li {
       opacity: 0.5;
   }
 }
-@keyframes blink {
+@keyframes sequence-blink {
   0% {
     opacity: 0.75;
   }
@@ -109,13 +109,43 @@ ul li {
 }
 
 
-.blink-mistake {
-  animation-duration: 600ms;
-  animation-name: blink-mistake;
-  -webkit-animation-duration: 600ms;
-  -webkit-animation-name: blink-mistake;
+.click-blink {
+  animation-duration: 300ms;
+  animation-name: click-blink;
+  -webkit-animation-duration: 300ms;
+  -webkit-animation-name: click-blink;
 }
-@-webkit-keyframes blink-mistake {
+@-webkit-keyframes click-blink {
+  0% {
+    opacity: 0.75;
+  }
+  33% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0.5;
+  }
+}
+@keyframes click-blink {
+  0% {
+    opacity: 0.75;
+  }
+  33% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0.5;
+  }
+}
+
+
+.mistake-blink {
+  animation-duration: 600ms;
+  animation-name: mistake-blink;
+  -webkit-animation-duration: 600ms;
+  -webkit-animation-name: mistake-blink;
+}
+@-webkit-keyframes mistake-blink {
   0% {
     opacity: 0.5;
   }
@@ -126,7 +156,7 @@ ul li {
       opacity: 0.5;
   }
 }
-@keyframes blink-mistake {
+@keyframes mistake-blink {
   0% {
     opacity: 0.5;
   }
