@@ -90,10 +90,10 @@ ul li {
     opacity: 0.75;
   }
   33% {
-      opacity: 1;
+    opacity: 1;
   }
   100% {
-      opacity: 0.5;
+    opacity: 0.5;
   }
 }
 @keyframes sequence-blink {
@@ -101,10 +101,10 @@ ul li {
     opacity: 0.75;
   }
   33% {
-      opacity: 1;
+    opacity: 1;
   }
   100% {
-      opacity: 0.5;
+    opacity: 0.5;
   }
 }
 
@@ -118,23 +118,35 @@ ul li {
 @-webkit-keyframes click-blink {
   0% {
     opacity: 0.75;
+    will-change: opacity;
+    backface-visibility: hidden;
   }
   33% {
-      opacity: 1;
+    opacity: 1;
+    will-change: opacity;
+    backface-visibility: hidden;
   }
   100% {
-      opacity: 0.5;
+    opacity: 0.5;
+    backface-visibility: hidden;
+    will-change: unset;
   }
 }
 @keyframes click-blink {
   0% {
     opacity: 0.75;
+    will-change: opacity;
+    backface-visibility: hidden;
   }
   33% {
-      opacity: 1;
+    opacity: 1;
+    will-change: opacity;
+    backface-visibility: hidden;
   }
   100% {
-      opacity: 0.5;
+    opacity: 0.5;
+    backface-visibility: hidden;
+    will-change: unset;
   }
 }
 
@@ -150,10 +162,10 @@ ul li {
     opacity: 0.5;
   }
   33% {
-      opacity: 0.05;
+    opacity: 0.05;
   }
   100% {
-      opacity: 0.5;
+    opacity: 0.5;
   }
 }
 @keyframes mistake-blink {
@@ -161,9 +173,9 @@ ul li {
     opacity: 0.5;
   }
   33% {
-      opacity: 0.05;
+    opacity: 0.05;
   }
   100% {
-      opacity: 0.5;
+    opacity: 0.5;
   }
 }
