@@ -10,7 +10,7 @@ body {
     grid-gap: 5px;
     width: 750px;
     margin: auto;
-    font-family: 'Courier New';
+    font-family: 'Inconsolata';
 }
 * { box-sizing: border-box; margin: 0; }
 
